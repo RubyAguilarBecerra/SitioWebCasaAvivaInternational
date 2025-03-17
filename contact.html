@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clamor por Colombia - Contacto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- Logo a la izquierda -->
+        <img src="img/logo.png" alt="Logo" class="img-fluid" style="width: 110px;">
+        <!-- Menú a la derecha -->
+        <nav>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-4"><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Sobre nosotros
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" >Nuestra identidad</a></li>
+                <li><a class="dropdown-item" >Nuestra meta</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" >Nuestra historia</a></li>
+              </ul>
+            </li>
+            <li class="ms-4"><a href="predicaciones.html" class="text-white text-decoration-none">Predicaciones</a></li>
+            <li class="ms-4"><a href="contact.html" class="text-white text-decoration-none">Contacto</a></li>
+            <button type="button"  class="button">Eventos</button>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Contáctanos</h2>
+      <p>Si tienes alguna pregunta o deseas unirte a nosotros en oración, por favor, contáctanos.</p>
+      <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Clamor por Colombia. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
