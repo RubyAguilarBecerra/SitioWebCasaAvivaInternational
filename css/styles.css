@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
 
 :root{
@@ -12,6 +13,7 @@
   --color-fondo:  #ffffff;
 
   --fuente-: 'Nunito', sans-serif;
+  --fuente-footer: "Bodoni Moda", serif;
 
 }
 
@@ -215,25 +217,28 @@ main {
 }
 
 .footer-title {
-  font-size: 32px;
+  font-family: var(--fuente-footer);
+  font-size: 52px;
   font-weight: bold;
 }
 
 .footer-verse {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   margin: 10px 0;
+  margin-top: 40px;
 }
 
 .footer-text {
-  font-size: 16px;
+  font-size: 20px;
   max-width: 600px;
   margin: 0 auto 20px auto;
 }
 
 .contact-title {
+  font-size: 14px;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 90px;
 }
 
 .social-icons {
