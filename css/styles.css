@@ -1,193 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
+:root {
+  --color1: #0a4b75;
+  --color2: #1e6495;
+  --color3: #5191c1;
+  --color4: #9e0e30;
+  --color5: #d1284f;
+  --color6: #000000;
+  --color-fondo: #ffffff;
 
-:root{
-  --color1:  #0a4b75 ;
-  --color2:  #1e6495 ;
-  --color3:  #5191c1 ;
-  --color4:  #9e0e30 ;
-  --color5:  #d1284f ;
-  --color6:  #000000;
-  --color-fondo:  #ffffff;
-
-  --fuente-: 'Nunito', sans-serif;
-  --fuente-footer: "Bodoni Moda", serif;
-
+  --fuente-principal: 'Nunito', sans-serif;
+  --fuente-footer: 'Bodoni Moda', serif;
 }
 
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    .header {
-      background-color: var(--color6);
-      font-size: 2.5rem;
-      font-family: var(--fuente-);
-      height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 20px;
-    }
-
-    .header_link {
-      font-family: var(--fuente-);
-      font-size: 1.2rem;
-      text-decoration: none;
-      color: var(--color6);
-    }
-
-    /* .body {
-      background-color: var(--color-fondo);
-      margin: 0;
-      font-family: var(--fuente-);
-    } */
-
-    .button {
-      background-color: var(--color3);
-      color: var(--color-fondo);
-      padding: 9px 15px;
-      border: none;
-      border-radius: 20px;
-      font-size: 1.2rem;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      font-family: var(--fuente-);
-      margin-left: 20px;
-      position: relative;
-      top: 10px; /* Ajusta el botón más abajo */
-    }
-  
-    
-    /* Imagen del banner */
-    .image-section img {
-        height: 600px;
-        object-fit: cover;
-    }
-    
-    /* Ajustes para el logo pequeño */
-    .logo-overlay img {
-        width: 100px;
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-  
-  header h1 {
-    font-size: 2.5rem;
-    font-family: var(--fuente-);
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-    font-family: var(--fuente-);
-  }
-  
-  /* Main section */
-  
-/* Eliminar márgenes y asegurar que el fondo negro cubra todo */
-html, body {
+* {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
+  box-sizing: border-box;
 }
 
-/* Asegurar que el contenedor principal ocupe todo el espacio */
-main {
-  min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: var(--fuente-principal);
+}
+
+/* HEADER */
+.header {
+  background-color: var(--color6);
+  height: 100px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: white;
 }
 
-  section {
-    margin-bottom: 30px;
-  }
-  
-  h2 {
-    color: var(--color4);
-    font-size: 1.8rem;
-  }
-  
-  /* Formulario de contacto */
-  
-  form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  form label {
-    font-size: 1rem;
-    margin-top: 10px;
-  }
-  
-  form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  form button {
-    background-color: #005288;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #003f5f;
-  }
-
-  .story-section {
-    background-color: var(--color-fondo);
-    color: var(--color6);
-    font-family: var(--fuente-);
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    opacity: 0; /* Oculto inicialmente */
-    transform: translateY(50px); /* Desplazado hacia abajo */
-    transition: all 0.6s ease-in-out;
+.header_link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
 }
 
-.story-section.appear {
-    opacity: 1; /* Se muestra con la animación */
-    transform: translateY(0); /* Vuelve a su posición original */
-}
-
-/* Sección "¿Quiénes somos?" */
+/* SECCIÓN QUIÉNES SOMOS */
 .quienes {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: black;
+  background-color: var(--color6);
   padding: 60px 80px;
   color: white;
 }
@@ -203,14 +66,51 @@ main {
   max-width: 600px;
 }
 
-/* Imagen de predicador */
 .predicador {
   width: 600px;
   height: auto;
 }
-  
+
+/* SECCIÓN NUESTRA HISTORIA */
+.history-section {
+  background-color: var(--color-fondo);
+  padding: 50px 0;
+}
+
+.history-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.history-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.history-text {
+  max-width: 600px;
+}
+
+.history-title {
+  font-size: 36px;
+  color: #600000;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.history-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* FOOTER */
 .footer {
-  background-color: #000;
+  background-color: black;
   color: white;
   text-align: center;
   padding: 40px 20px;
@@ -225,8 +125,7 @@ main {
 .footer-verse {
   font-size: 22px;
   font-weight: bold;
-  margin: 10px 0;
-  margin-top: 40px;
+  margin: 40px 0 10px;
 }
 
 .footer-text {
@@ -265,4 +164,12 @@ main {
 
 .highlight {
   font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .history-container {
+    flex-direction: column;
+    text-align: center;
+  }
 }
