@@ -39,25 +39,76 @@
       </div>
     </div>
   </header>
-
-  <main>
-    <section>
-      <h2>Contáctanos</h2>
-      <p>Si tienes alguna pregunta o deseas unirte a nosotros en oración, por favor, contáctanos.</p>
-      <form>
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required><br>
-
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required><br>
-
-        <label for="message">Mensaje:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
+  <main class="container my-5 text-center">
+    <h2 class="mb-4 fw-bold">Contáctanos</h2>
+    <p class="lead text-muted">Estamos aquí para servirte. Escríbenos o visítanos para conocer más sobre nuestra comunidad.</p>
+  
+    <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+  
+      <!-- Dirección -->
+      <div class="col">
+        <div class="card border-0 shadow p-4">
+          <i class="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
+          <h5 class="fw-bold">Nuestra Ubicación</h5>
+          <p class="text-muted">Calle Principal #123, Ciudad, País</p>
+        </div>
+      </div>
+  
+      <!-- Horario -->
+      <div class="col">
+        <div class="card border-0 shadow p-4">
+          <i class="fas fa-clock fa-3x text-warning mb-3"></i>
+          <h5 class="fw-bold">Horario de Servicio</h5>
+          <p class="text-muted">Domingo 8:00 AM</p>
+        </div>
+      </div>
+  
+      <!-- Teléfono y WhatsApp -->
+      <div class="col">
+        <div class="card border-0 shadow p-4">
+          <i class="fas fa-phone-alt fa-3x text-success mb-3"></i>
+          <h5 class="fw-bold">Llámanos</h5>
+          <p class="text-muted">+123 456 7890</p>
+        </div>
+      </div>
+  
+      <!-- Correo Electrónico -->
+      <div class="col">
+        <div class="card border-0 shadow p-4">
+          <i class="fas fa-envelope fa-3x text-danger mb-3"></i>
+          <h5 class="fw-bold">Correo Electrónico</h5>
+          <p class="text-muted">contacto@casaavivainternational.org</p>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Sección de Oración y Peticiones -->
+    <div class="mt-5">
+      <h3 class="fw-bold">Oración y Peticiones</h3>
+      <p class="lead text-muted fst-italic">
+        "No se inquieten por nada; más bien, en toda ocasión, con oración y ruego, 
+        presenten sus peticiones a Dios y denle gracias." <br> — Filipenses 4:6
+      </p>
+      <div class="d-flex justify-content-center gap-4 mt-3">
+        <a href="https://wa.me/1234567890?text=Bendiciones,%20quiero%20pedir%20oración%20por..." 
+           class="btn btn-danger mt-2">
+          <i class="fab fa-whatsapp"></i> Pedir oración
+        </a>
+      </div>
+    </div>
+  
+    <!-- Mapa -->
+    <div class="mt-5">
+      <h3 class="fw-bold">Ubicación</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12687.50408851616!2d-74.0060158!3d40.7127759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDQyJzQ2LjAiTiA3NMKwMDAnMzEuMCJX!5e0!3m2!1ses!2sco!4v1642487842045"
+        width="100%" height="350" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
   </main>
+  
+  
 
   <footer class="footer">
     <h2 class="footer-title">La iglesia somos todos</h2>
@@ -66,7 +117,7 @@
       Nosotros hemos conocido y creído el amor que Dios tiene para con nosotros. 
       Dios es amor; y el que permanece en amor, permanece en Dios, y Dios en él.
     </p>
-  
+    
     <p class="contact-title">CONTACTO</p>
     
     <!-- Íconos de redes sociales -->
@@ -76,11 +127,13 @@
       <a href="#" target="_blank"><img src="img/tiktok.png" alt="TikTok"></a>
       <a href="#" target="_blank"><img src="img/youtube.png" alt="YouTube"></a>
     </div>
-  
+    
     <p class="footer-credits">
       © 2024 Casa Aviva International. Desarrollado por la ingeniera <span class="highlight">@Ruby Aguilar</span>
     </p>
   </footer>
 
+  <!-- Agregar FontAwesome para los íconos -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
