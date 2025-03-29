@@ -27,25 +27,101 @@ body {
   overflow-x: hidden;
   font-family: var(--fuente-principal);
 }
-
-/* HEADER */
+/* ================= HEADER ================= */
 .header {
   background-color: var(--color6);
-  height: 100px;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  color: white;
+  transition: background 0.3s ease-in-out;
 }
 
-.header_link {
+/* Logo a la izquierda con su tamaño original */
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+/* Menú de navegación a la derecha */
+.nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
   font-size: 1.2rem;
-  text-decoration: none;
   color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
 }
 
-/* SECCIÓN QUIÉNES SOMOS */
+.nav-link:hover {
+  color: var(--color3);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Botón de eventos */
+.btn-eventos {
+  background-color: var(--color5);
+  color: white;
+  font-size: 1rem;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-eventos:hover {
+  background-color: var(--color4);
+}
+
+/* Menú hamburguesa */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header {
+    padding: 0 20px;
+  }
+
+  .nav {
+    gap: 15px;
+  }
+}
+
+/* ===== SECCIÓN QUIÉNES SOMOS ===== */
 .quienes {
   display: flex;
   align-items: center;
@@ -71,7 +147,7 @@ body {
   height: auto;
 }
 
-/* SECCIÓN NUESTRA HISTORIA */
+/* ===== SECCIÓN NUESTRA HISTORIA ===== */
 .history-section {
   background-color: var(--color-fondo);
   padding: 50px 0;
@@ -108,7 +184,7 @@ body {
   color: #333;
 }
 
-/* FOOTER */
+/* ===== FOOTER ===== */
 .footer {
   background-color: black;
   color: white;
@@ -140,6 +216,7 @@ body {
   margin-top: 90px;
 }
 
+/* Íconos de redes sociales */
 .social-icons {
   display: flex;
   justify-content: center;
