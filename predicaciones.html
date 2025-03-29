@@ -12,33 +12,43 @@
 
   <!-- Header -->
   <header class="header">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-        <!-- Logo a la izquierda -->
-        <img src="img/logo.png" alt="Logo" class="img-fluid" style="width: 110px;">
-        <!-- Menú a la derecha -->
-        <nav>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-4"><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                Sobre nosotros
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" >Nuestra identidad</a></li>
-                <li><a class="dropdown-item" >Nuestra meta</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" >Nuestra historia</a></li>
-              </ul>
-            </li>
-            <li class="ms-4"><a href="predicaciones.html" class="text-white text-decoration-none">Predicaciones</a></li>
-            <li class="ms-4"><a href="contact.html" class="text-white text-decoration-none">Contacto</a></li>
-            <button type="button"  class="button">Eventos</button>
-          </ul>
-        </nav>
-      </div>
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="img/Logo.png" alt="Logo" class="logo">
+      </a>
+  
+      <!-- Menú de navegación -->
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li class="dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Sobre nosotros
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#quienes-somos">¿Quiénes somos?</a></li>
+              <li><a class="dropdown-item" href="#nuestra-historia">Nuestra historia</a></li>
+            </ul>
+          </li>
+          <li><a href="predicaciones.html" class="nav-link">Predicaciones</a></li>
+          <li><a href="contact.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Botón de Eventos -->
+      <a href="#" class="btn-eventos">Eventos</a>
+  
+      <!-- Botón de menú para móviles -->
+      <button class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
+
+  <!-- Main -->
   <main class="container my-5">
     <!-- Sección de Predicaciones -->
     <section class="text-center">
