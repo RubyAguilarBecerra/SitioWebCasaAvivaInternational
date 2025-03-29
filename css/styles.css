@@ -43,7 +43,7 @@ body {
 
 /* Logo a la izquierda con su tamaño original */
 .logo {
-  width: 150px;
+  width: 90px;
   height: auto;
 }
 
@@ -70,14 +70,14 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--color3);
-  background: rgba(255, 255, 255, 0.2);
+  color: var(--color4);
+  background: rgba(101, 59, 59, 0.2);
   border-radius: 5px;
 }
 
 /* Botón de eventos */
 .btn-eventos {
-  background-color: var(--color5);
+  background-color: var(--color4);
   color: white;
   font-size: 1rem;
   padding: 10px 18px;
